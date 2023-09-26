@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center py-10'>
+        <div className='flex flex-col md:flex-row justify-between items-center py-10'>
             <img className='w-48' src="./Logo.png" alt="logo" />
             <ul className='flex gap-12 text-lg text-[#0B0B0B]'>
                 <li>
