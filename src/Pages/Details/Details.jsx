@@ -14,7 +14,7 @@ const Details = () => {
     }, [id, cards])
 
     return (
-        <div className='my-10'>
+        <div className='mt-10 md:mt-20 mb-16 md:mb-32'>
             <CardDetails card={card}></CardDetails>
         </div>
     );
