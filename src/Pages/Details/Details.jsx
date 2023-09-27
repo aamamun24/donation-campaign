@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import CardDetails from '../../components/CardDetails/CardDetails';
+import CardDetails from './CardDetails';
 
 const Details = () => {
 

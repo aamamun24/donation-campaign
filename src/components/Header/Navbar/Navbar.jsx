@@ -3,9 +3,9 @@ import logo from "/Logo.png"
 
 const Navbar = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-between items-center py-10'>
+        <div className='flex flex-col md:flex-row gap-6 justify-between items-center py-10'>
             <Link to="/"><img className='w-48' src={logo} alt="Logo" /></Link>
-            <ul className='flex gap-12 text-lg text-[#0B0B0B]'>
+            <ul className='flex gap-8 md:gap-12 text-lg text-[#0B0B0B]'>
                 <li>
                     <NavLink
                         to="/"
