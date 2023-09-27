@@ -1,10 +1,10 @@
-import Header from '../components/Header/Header';
+import Navbar from '../components/Header/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
     return (
         <div className='container mx-auto px-6 md:px-12 lg:px-20'>
-            <Header></Header>
+            <Navbar></Navbar>
             <Outlet></Outlet>
         </div>
     );
