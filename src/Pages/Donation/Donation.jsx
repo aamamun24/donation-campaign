@@ -28,7 +28,7 @@ const Donation = () => {
                                     cards.slice(0, 4).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
                             }
                         </div>
-                        {cards.length > 4 && <button onClick={() => setSeeAll(!seeAll)} className="text-white font-semibold bg-[#009444] py-4 px-7 rounded-lg mt-10 block mx-auto">{seeAll ? "See Less" : "See All"}</button>}
+                        {cards.length > 4 && <button onClick={() => setSeeAll(!seeAll)} className={`${seeAll ? 'hidden' : 'text-white font-semibold bg-[#009444] py-4 px-7 rounded-lg mt-10 block mx-auto'}`}>See All</button>}
                     </div>
             }
         </div>
