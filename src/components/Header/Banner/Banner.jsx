@@ -1,11 +1,4 @@
-import { useState } from "react";
-
 const Banner = () => {
-    const [inputValue, setInputValue] = useState()
-
-    const handleSearch = () => {
-        console.log(inputValue);
-    }
 
     return (
         <div className="relative">
@@ -15,8 +8,8 @@ const Banner = () => {
                 <div>
                     <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text=[#0B0B0B] text-center">I Grow By Helping People In Need</h1>
                     <div className="flex justify-center mt-10">
-                        <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" placeholder="Search here...." className="text-[#0B0B0B66] p-4 rounded-l-lg border border-[#DEDEDE] focus:outline-none w-2/3 md:w-auto" />
-                        <button onClick={handleSearch} className="bg-[#FF444A] border border-[#FF444A] py-4 px-7 rounded-r-lg text-white font-semibold">Search</button>
+                        <input type="text" placeholder="Search here...." className="text-[#0B0B0B66] p-4 rounded-l-lg border border-[#DEDEDE] focus:outline-none w-2/3 md:w-auto" />
+                        <button className="bg-[#FF444A] border border-[#FF444A] py-4 px-7 rounded-r-lg text-white font-semibold">Search</button>
                     </div>
                 </div>
             </div>
